@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Fashion lookbook</title>
+    <script src="https://kit.fontawesome.com/f2b50825ee.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pic/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">FASHION</a></li>
+                    <li><a href="#about">BEAUTY</a></li>
+                    <li><a href="#isha-closet">ISHA CLOSET</a></li>
+                    <li><a href="#portfolio">CULTURE</a></li>
+                    <li><a href="#contact">WEDDING WARDROBE</a></li>
+                    <li><a href="#contact">ISHA BEAUTY FESTIVAL</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <ins>Fashion</ins>
+            </div>
+            <br>
+            <nav class="nav2">
+                <ul id="sidemenu">
+                    <li><a href="#isha-closet">ALL TOPICS</a></li>
+                    <li><a href="#about">TRENDS</a></li>
+                    <li><a href="#services">INSIDER</a></li>
+                    <li><a href="#portfolio">WHAT TO BUY</a></li>
+                    <li><a href="#contact">FASHION SHOWS</a></li>
+                    <li><a href="#contact">STREET STYLE</a></li>
+                    <li><a href="#contact">WHAT'S NEW</a></li>
+                </ul>
+            </nav>
+            <br>
+            <div id="hero-image">
+
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <div class="image">
+                            <img src="pic/hero2.jpg">
+                        </div>
+                        <div class="hero-text">
+                            <H1>FASHION</H1>
+                            <h2>LOOK<span>BOOK</span></h2>
+                            <p>Wear Confidence</p>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <div class="image">
+                            <img src="pic/lookbook2.jpg">
+                        </div>
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                       <div class="image">
+                           <img src="pic/Fashion3.webp">
+                       </div>
+                        <div class="text"></div>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+        </div>
+    </div>
+    <!-- ------------------->
+    <br>
+    <!-- ----2ndpg------- -->
+    <div id="isha-closet">
+        <div class="container">
+            <div class="services-list">
+                <div>
+                    <img src="pic/janhvi pic.webp" class="bn" alt="">
+                    <h4>FASHION</h4>
+                    <a href="pg1.html">Janhvi and Khushi Kapoor are leaning into their pin-up style era, as seen on
+                        Koffee with Karan</a><br>
+                    <span>March 30 2024</span>
+                </div>
+                <div>
+                    <img src="pic/dep pic.webp" class="bn" alt="">
+                    <h4>FASHION</h4>
+                    <a href="deepika.html">Deepika Padukone's best looks in 2023—from the Louis Vuitton gown to the
+                        fiery red
+                        Victoria Beckham dress</a><br>
+                    <span>March 30 2024</span>
+                </div>
+                <div>
+                    <img src="pic/Mia_SOCIAL2.webp" class="bn" alt="">
+                    <h4>FASHION</h4>
+                    <a href="mia.html">How to dress like Mia Khalifa and channel your inner fashion girl</a>
+                    <br><span>March 30 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3rdpg -->
+    <div id="isha-closet">
+        <div class="container">
+            <div class="services-list">
+                <div>
+                    <img src="pic/esha pic.webp" class="bn" alt="">
+                    <h4>FASHION</h4>
+                    <a href="Esha.html">Esha Gupta's Benarasi silk sari features a unique brocade motif of Nandi
+                        bulls</a><br>
+                    <span>March 30 2024</span>
+                </div>
+                <div>
+                    <img src="pic/jeremy pic.webp" class="bn" alt="">
+                    <h4>FASHION</h4>
+                    <a href="jeremy.html">Jeremy Allen White's Calvin Klein campaign photo shoot did not need to go so
+                        hard</a><br>
+                    <span>March 30 2024</span>
+                </div>
+                <div>
+                    <img src="pic/krishma pic.webp" class="bn" alt="">
+                    <h4>FASHION</h4>
+                    <a href="kris.html">Karisma Kapoor is wearing the floppy beach hat from our 2014 Instagram days</a>
+                    <span>March 30 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----4rd---- -->
+    <div id="fashion">
+        <div class="container">
+
+            <div class="services-list">
+                <div>
+                    <img src="pic/un pic.webp" class="bn" alt="">
+                    <h4>FASHION</h4>
+                    <a href="cncn.html">In 2024, the naked skirt will be the new naked dress</a><br>
+                    <span>March 30 2024</span>
+                </div>
+                <div>
+                    <img src="pic/manu pic.webp" class="bn" alt="">
+                    <h4>FASHION</h4>
+                    <a href="manu.html">Why Manushi Chhillar's thigh-high slit gown is the perfect choice to close the
+                        year</a><br>
+                    <span>March 30 2024</span>
+                </div>
+                <div>
+                    <img src="pic/gigi pic.webp" class="bn" alt="">
+                    <h4>FASHION</h4>
+                    <a href="gigi.html">Gigi Hadid is feeling the new ombré trend with her newest bodycon number</a><br>
+                    <span>March 30 2024</span>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- -----footer---- -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <img src="pic/logo.png" class="logo">
+                <div class="social">
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-youtube'></i></a>
+                    <a href=""><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>SEE MORE STORIES</h3>
+                <a href="">FASHION</a>
+                <a href="">BEAUTY</a>
+                <a href="">ISHA CLOSET</a>
+                <a href="">HOROSCOPE</a>
+                <a href="">VISUAL STORIES</a>
+                <a href="">CULTURE & LIFESTYLE</a>
+                <a href="">WEDDING WARDROBE</a>
+                <a href="">FORCES OF FASHION</a>
+                <a href="">DUBAI: DESTINATION WEDDINGS</a>
+                <a href="">DIAMOND FESTIVAL 2022</a>
+                <a href="">PHOTOISHA</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contacts</h3>
+                <p>United States</p>
+                <p>Japan</p>
+                <p>Germany</p>
+                <p>India</p>
+            </div>
+        </div>
+    </section>
+    <div class="term">
+        <a href="">TERMS OF SERVICE</a>
+        <a href="">CONTACTS</a>
+        <a href="">CAREERS</a>
+        <a href="">ADVERTISING</a>
+        <a href="">NEWSLETTER</a>
+        <a href="">SUBSCRIBE</a>
+        <a href=""><i class='bx bxs-cookie'></i>COOKIES SETTING</a>
+    </div>
+    <div class="copyright">
+        <p>&#169; ISHA FASHION 2024 Fashion Page </p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
